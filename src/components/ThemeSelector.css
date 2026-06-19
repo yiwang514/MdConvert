@@ -1,0 +1,18 @@
+.theme-select {
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid var(--fog);
+  border-radius: var(--radius-sm);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease;
+  height: 30px;
+}
+
+.theme-select:hover,
+.theme-select:focus {
+  border-color: var(--accent);
+}

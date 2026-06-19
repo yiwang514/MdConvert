@@ -1,0 +1,110 @@
+.dropzone-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+}
+
+.dropzone {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  padding: var(--space-12) var(--space-8);
+  border: 2px dashed var(--fog);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.dropzone:hover {
+  border-color: var(--accent);
+  background: var(--accent-ghost);
+}
+
+.dropzone--active {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  border-style: solid;
+}
+
+.dropzone__input {
+  display: none;
+}
+
+.dropzone__icon {
+  color: var(--stone);
+  margin-bottom: var(--space-4);
+  transition: color 0.2s ease;
+}
+
+.dropzone:hover .dropzone__icon,
+.dropzone--active .dropzone__icon {
+  color: var(--accent);
+}
+
+.dropzone__title {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: var(--space-2);
+}
+
+.dropzone__subtitle {
+  font-size: var(--text-sm);
+  color: var(--stone);
+  margin-bottom: var(--space-6);
+}
+
+.dropzone__actions {
+  display: flex;
+  gap: var(--space-3);
+  justify-content: center;
+  margin-bottom: var(--space-4);
+}
+
+.dropzone__btn {
+  padding: var(--space-2) var(--space-5);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  color: white;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.dropzone__btn:hover {
+  background: var(--accent-hover);
+}
+
+.dropzone__btn--secondary {
+  background: transparent;
+  color: var(--accent);
+}
+
+.dropzone__btn--secondary:hover {
+  background: var(--accent-ghost);
+}
+
+.dropzone__hint {
+  font-size: var(--text-xs);
+  color: var(--stone);
+}
+
+.dropzone__error {
+  margin-top: var(--space-3);
+  padding: var(--space-2) var(--space-3);
+  background: #fef2f2;
+  color: #b91c1c;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+}
+
+[data-theme="dark"] .dropzone__error {
+  background: #2d1b1b;
+  color: #f87171;
+}

@@ -1,0 +1,30 @@
+.status-bar {
+  display: flex;
+  align-items: center;
+  height: var(--statusbar-h);
+  padding: 0 var(--space-4);
+  background: var(--parchment);
+  border-top: 1px solid var(--fog);
+  font-size: var(--text-xs);
+  color: var(--stone);
+  gap: var(--space-4);
+  flex-shrink: 0;
+}
+
+.status-bar__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.status-bar__item strong {
+  color: var(--ink-secondary);
+  font-weight: 500;
+}
+
+.status-bar__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
